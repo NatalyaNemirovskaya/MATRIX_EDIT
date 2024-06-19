@@ -13,15 +13,11 @@ namespace math
     std::vector<real> mvec_;
 
     public:
-     Matrix(){};
+     Matrix();
 
-     Matrix(int rows, int cols): rows_(rows),cols_(cols), mvec_(std::vector<real>(cols*rows))
-     {
+     Matrix(int rows, int cols);
 
-     };
-
-
-     
+          
     real& operator()(int row, int col);
 
     real  operator()(int row, int col) const;
@@ -50,7 +46,7 @@ namespace math
 
       //friend std::istream& operator>>(std::istream& in,  Matrix& M) ; //перегрузка оператора <<
 
-    friend std::istream& operator>>(std::istream& in,  math::Matrix& M(int row, int col)) ; //перегрузка оператора <<
+   // friend std::istream& operator>>(std::istream& in,  math::Matrix& M(int row, int col)) ; //перегрузка оператора <<
 
 
     } ;

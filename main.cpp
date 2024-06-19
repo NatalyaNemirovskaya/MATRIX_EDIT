@@ -15,6 +15,14 @@ std::ostream &operator<<(std::ostream &os,  const math::Matrix &M)
       return os;
    }
 
+   std::istream &  operator>>(std::istream &in, math::Matrix &M(int row, int col))
+{
+
+   in >> *M;
+
+   return in;
+}
+
 
 int main()
 {

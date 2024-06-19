@@ -5,6 +5,17 @@
 
 using namespace math;
 
+Matrix::Matrix()
+{
+
+};
+
+
+Matrix::Matrix(int rows, int cols): rows_(rows),cols_(cols), mvec_(std::vector<real>(cols*rows))
+     {
+
+     };
+
 real& Matrix::operator()(int row, int col)
 {
      if(row >= this->rows_)
@@ -186,10 +197,10 @@ int Matrix::get_n_col() const //return cols_
    return in;
 }*/
 
-std::istream &math::operator>>(std::istream &in, math::Matrix &M(int row, int col))
+/*std::istream &math::operator>>(std::istream &in, math::Matrix &M(int row, int col))
 {
 
    in >> *M;
 
    return in;
-}
+}*/
