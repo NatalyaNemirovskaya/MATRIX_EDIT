@@ -14,9 +14,9 @@ set(CMAKE_BUILD_TYPE  Debug)
 add_executable(Matrix_class)
 
 set(sources
-   src/main.cpp
-   src/matrix.h
-   src/matrix.cpp
+   main.cpp
+   matrix.h
+    matrix.cpp
 )
 
 target_sources(Matrix_class PRIVATE ${sources})
